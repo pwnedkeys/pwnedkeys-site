@@ -1,0 +1,26 @@
+				<h1 class="post">
+					<a href="{{site.url}}{{post.url}}"
+					   title="{{post.title}}">
+						{{post.title}}
+					</a>
+				</h1>
+				<p class="postsubhead">
+					Posted: {{post.date | date: "%a, %e %B %Y"}}
+					{% if post.author_name %}
+					by {{post.author_name}}
+					{% endif %}
+					| <a
+					href="{{site.url}}{{post.url}}">permalink</a>
+					| <a
+					href="{{site.url}}{{post.url}}#comments">
+						{% case post.comment_count %}
+						{% when 0 %}
+							No comments
+						{% when 1 %}
+							1 Comment
+						{% else %}
+							{{post.comment_count}} Comments
+						{% endcase %}
+					</a>
+				</p>
+{{post.content}}

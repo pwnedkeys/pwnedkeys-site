@@ -1,0 +1,200 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: #555;
+	margin: 0;
+	padding: 0;
+	font-family: "Bitstream Vera Sans", sans-serif;
+	height: 100%;
+}
+
+#foreground {
+	background: #396795;
+	
+	border-left: black 1px solid;
+	border-right: black 1px solid;
+	
+	box-shadow: -5px 0 5px #3c3c3c, 5px 0 5px #3c3c3c;
+
+	min-height: 100%;
+	
+	max-width: 70em;
+
+	margin: 0px auto;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#content_wrapper {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+#navbar {
+	background: linear-gradient(to bottom, #aaa, white);
+	border-radius: 5px;
+	padding-left: 40px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	max-width: 66em;
+	margin: 10px auto;
+}
+
+#navbar ul {
+	padding: 0;
+	margin: 0;
+}
+
+#navbar li {
+	display: inline;
+	margin-left: 15px;
+	padding: 5px 20px;
+}
+
+#navbar li a {
+	text-decoration: none;
+	color: black;
+}
+
+#navbar li a:hover {
+	text-decoration: underline;
+	background: linear-gradient(to bottom, #aaa, white, #aaa);
+	color: #666;
+}
+
+#content {
+	display: inline-block;
+	text-align: left;
+	
+	background: white;
+	border-radius: 5px;
+	border: 1px black solid;
+
+	padding-left: 40px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#header {
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+
+h1.page_title {
+	padding-top: 20px;
+	padding-right: 10px;
+	
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-align: right;
+
+	color: #eeeeee;
+}
+
+p.page_title {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 60%;
+	color: #eee;
+	text-align: right;
+	padding-right: 10px;
+}
+
+img {
+	border: 0;
+}
+
+img.face {
+	float: right;
+	margin-top: -3em;
+}
+
+#content a {
+	color: #133A61;
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+#content h1 {
+	font-size: 150%;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+}
+
+#content h2 {
+	font-size: 140%;
+	font-weight: normal;
+	color: black;
+}
+
+#content h3 {
+	font-size: 120%;
+	font-weight: bold;
+	color: black;
+}
+
+#content h4 {
+	font-size: 100%;
+	font-weight: bold;
+	color: black;
+}
+
+p.footer {
+	font-size: 60%;
+	color: #eee;
+	margin: 10px 2em;
+}
+
+.footer a {
+	color: #eee;
+}
+
+.hidden {
+	display: none;
+}
+
+.ui-dialog {
+	font-size: 80% !important;
+}
+
+th {
+	text-align: left;
+	vertical-align: top;
+}
+
+th.label {
+	white-space: nowrap;
+}
+
+.ui-widget-overlay {
+	background: #000 !important;
+}
+
+p.explanation {
+	font-size: 60%;
+	width: 50%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd $RELEASE
+
+. /etc/profile
+
+bundle install --path ~/.gem --deployment
+
+bundle exec jekyll --url //pwnedkeys.com

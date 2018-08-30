@@ -1,0 +1,10 @@
+exclude:
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+future: false
