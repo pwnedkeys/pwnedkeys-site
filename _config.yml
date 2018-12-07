@@ -2,6 +2,7 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - deploy
 
 markdown: kramdown
 kramdown:
