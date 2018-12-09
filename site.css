@@ -198,3 +198,19 @@ p.explanation {
 .right {
 	float: right;
 }
+
+table.bordered {
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	margin: 1em;
+}
+
+table.bordered th,td {
+	border-color: black;
+	border-width: 1em;
+	border-style: solid;
+	border-collapse: collapse;
+	padding: 0.2em 0.6em;
+}

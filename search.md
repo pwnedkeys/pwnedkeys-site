@@ -137,7 +137,7 @@ The HTTP response as a whole is a JSON object -- that is, a bunch of
   object which is itself the "protected headers" of the signature.  The keys in
   *this* sub-object will be:
   
-  * **`"alg"` -- the signature algorithm used to generate the signature.  Which
+  * **`"alg"`** -- the signature algorithm used to generate the signature.  Which
 	algorithm is used for signing is determined by the type of key that was
 	looked up.  For RSA keys, `alg` will be `RS256` (an RSASSA-PKCS1-v1_5
 	signature over a SHA-256 hash), whilst for elliptic curve keys, you'll get
@@ -155,7 +155,7 @@ The HTTP response as a whole is a JSON object -- that is, a bunch of
 	key you are querying for, you shouldn't get a signature algorithm you're
 	not prepared to handle.
 
-  * **`"kid"` -- this is the hex-encoded, SHA-256 fingerprint of the queried
+  * **`"kid"`** -- this is the hex-encoded, SHA-256 fingerprint of the queried
 	key, which is the same as the fingerprint used to query the key.
 
 * **`payload`** -- a string containing a URL-safe, base64-encoded string, which
@@ -181,7 +181,7 @@ use the following "test" RSA and ECDSA private keys, which have been used to
 generate a dummy CSR and self-signed certificate.  They can be looked up in the
 pwnedkeys API, and should return a JWS that you can verify.
 
-<table>
+<table class="bordered">
  <thead>
   <tr>
    <th>Type</th>
