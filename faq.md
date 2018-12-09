@@ -45,6 +45,16 @@ You've got questions?  This FAQ (might) have answers!
   Mostly by searching the Internet and finding them.  Some get [submitted by
   helpful individuals, too](submit.html).
 
+* **What kinds of keys does pwnedkeys store?**
+
+  The pwnedkeys database keeps records of 2048 bit and larger RSA keys, as well
+  as elliptic-curve keys on the P-256, P-384, and P-521 curves.  Support for
+  curve25519 and curve448 keys are planned.
+
+  DSA keys, and RSA keys smaller than 2048 bits, are not kept, as these keys are
+  generally considered of limited security, and in general should not be used at
+  all, whether they are known to be compromised or not.
+
 * **What do I do if my key is reported as compromised?**
 
   If you are the legitimate owner of the key, then you need to replace it with
