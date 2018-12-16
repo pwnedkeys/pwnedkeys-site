@@ -26,10 +26,7 @@ format of the private key in your submission.
 If, for some reason, you're unwilling to provide the private key itself, you
 can instead provide an appropriate formatted attestation of key compromise,
 which can be served via [the v1 API](search.html).  The easiest way to do that
-is to use [the
-pwnedkeys-response-generator](https://github.com/pwnedkeys/pwnedkeys-response-generator).
-Installation and usage instructions are in [the
-README](https://github.com/pwnedkeys/pwnedkeys-response-generator#readme).
+is to use [the pwnedkeys-prove-pwned program](https://github.com/pwnedkeys/pwnedkeys-tools#generate-a-compromise-attestation).
 
 E-mail the generated attestation, along with the associated public key
 (preferably in PEM format), to

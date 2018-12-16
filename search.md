@@ -41,7 +41,7 @@ given public key.  Try saying *that* ten times fast.
 
 You can extract the SHA-256 fingerprint from a private key, CSR, or certificate
 using the following command line (adapted from [the Mozilla
-documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning):
+documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Public_Key_Pinning)):
 
 For an RSA private key:
 
@@ -67,7 +67,7 @@ you're choosing a function to call that it is (a) hex-encoded, (b) a
 certificate.
 
 
-### Sidebar: SPKI: The Gory Bits
+### Sidebar -- SPKI: The Gory Bits
 
 (This section is only important if you need to implement fingerprint calculation
 in an environment which doesn't have any existing means of calculating SPKI

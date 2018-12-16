@@ -9,10 +9,10 @@ You've got questions?  This FAQ (might) have answers!
   From time to time, private keys (the part of a key which you're supposed to
   keep, well, *private*) become less private.  When that happens, it's a
   *really* bad idea to keep using them, because anyone can then pretend to be
-  you.  Various organisations have a duty to try and stop users from using
-  compromised keys, such as Certification Authorities (the people who hand out
-  SSL certificates), but it's hard for them to know whether a key's been
-  compromised because they're... everywhere.
+  the real owner or the key.  Various organisations have a duty to try and stop
+  users from using compromised keys, such as Certification Authorities (the
+  people who hand out SSL certificates), but it's hard for them to know whether
+  a key's been compromised because they're... everywhere.
 
   This site is intended to be *the* place where people can go to determine
   whether a key has been compromised, somehow, and should not be used.
@@ -20,10 +20,11 @@ You've got questions?  This FAQ (might) have answers!
 * **How do keys get compromised?**
 
   A variety of ways.  Most often they just get leaked accidentally by the
-  legitimate owner of the key, by putting it somewhere not private, like
-  GitHub or pastebin.  Occasionally they'll be embedded in software which
-  is publicly released, or stolen by someone breaking into a machine.
-  Once or twice, a systemic weakness in a piece of software causes a whole
+  legitimate owner of the key, by putting it somewhere not private, like GitHub
+  or pastebin.  Occasionally they'll be embedded in software which is publicly
+  released, or stolen by someone breaking into a machine.  Every now and then,
+  a [systemic weakness in a piece of
+  software](https://www.debian.org/security/2008/dsa-1571) causes a whole
   *heap* of keys to be compromised all at once.
 
 * **How does pwnedkeys work?**
