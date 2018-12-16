@@ -3,7 +3,20 @@ layout: default
 title: discover if your key is pwned
 ---
 If you have a public or private key, you can see if the key appears in the
-pwnedkeys database using the pwnedkeys API.  It involves the following steps:
+pwnedkeys database using the pwnedkeys API.
+
+The simplest way to do that is
+to use the `pwnedkeys-query` command in the [`pwnedkeys-tools`](https://github.com/pwnedkeys/pwnedkeys-tools)
+package.  It takes a key, public, private, or embedded in a certificate or CSR,
+and queries the pwnedkeys API.  Very simple.  Installation and usage instructions
+are in [the `pwnedkeys-tools` README](https://github.com/pwnedkeys/pwnedkeys-tools#readme).
+
+If you wish to implement your own querying functionality, integrating it into
+an existing key-using service, read on.
+
+# Querying the pwnedkeys API
+
+Making a query involves the following steps:
 
 1. Calculate the SPKI fingerprint of the key.
 
@@ -19,7 +32,7 @@ pwnedkeys database using the pwnedkeys API.  It involves the following steps:
 Let's examine each of those steps in more detail.
 
 
-# Calculate the SPKI fingerprint
+## Step 1: Calculate the SPKI fingerprint
 
 The SPKI fingerprint of a key (or certificate) is the all-lowercase hex-encoded
 SHA-256 hash of the DER-encoded form of [the `subjectPublicKeyInfo` ASN.1
@@ -54,7 +67,7 @@ you're choosing a function to call that it is (a) hex-encoded, (b) a
 certificate.
 
 
-## SPKI: The Gory Bits
+### Sidebar: SPKI: The Gory Bits
 
 (This section is only important if you need to implement fingerprint calculation
 in an environment which doesn't have any existing means of calculating SPKI
@@ -85,7 +98,7 @@ pwnedkeys actually calculates *both* fingerprints and will respond to a request
 for the fingerprint of either.  You're welcome, world.
 
 
-# Query the pwnedkeys API
+## Step 2: Query the pwnedkeys API
 
 To ask the pwnedkeys API whether a key is in the pwnedkeys database, you
 make a `GET` requests to a URL of the following form:
@@ -111,7 +124,7 @@ connection failure, premature disconnection, or response time out is also a
 server-side problem.
 
 
-# Validate the Response
+## Step 3: Validate the Response
 
 Whilst pwnedkeys is a *very* trustworthy service, and you should definitely
 trust what the API says, it's always a good idea to verify that the key is,
@@ -174,7 +187,7 @@ string](https://en.wikipedia.org/wiki/Base64), except the `+` is replaced with
 omitted.
 
 
-# Examples
+## Examples
 
 To help you in verifying that your querying code is working correctly, you can
 use the following "test" RSA and ECDSA private keys, which have been used to
