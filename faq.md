@@ -78,7 +78,7 @@ You've got questions?  This FAQ (might) have answers!
 * **Who is behind this?**
 
   The primary developer and maintainer of pwnedkeys is Matt Palmer, a long-time
-  security afficionado and generally grumpy geek.
+  security and crypto(graphy!) afficionado.
 
 * **I have more questions!**
 
