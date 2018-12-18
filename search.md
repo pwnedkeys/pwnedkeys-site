@@ -209,19 +209,19 @@ pwnedkeys API, and should return a JWS that you can verify.
    <td>2048 RSA</td>
    <td><tt>9e03b56749abe821a6f5299d6f634b35404975f0552eb3347bf3adfad9af1109</tt></td>
    <td>
-    <a href="example/rsa2048_key.pem">PEM</a>
+    <a href="examples/rsa2048_key.pem">PEM</a>
 	<br>
-	<a href="example/rsa2048_key.der">DER</a>
+	<a href="examples/rsa2048_key.der">DER</a>
    </td>
    <td>
-    <a href="example/rsa_2048_csr.pem">PEM</a>
+    <a href="examples/rsa_2048_csr.pem">PEM</a>
 	<br>
-	<a href="example/rsa_2048_csr.der">DER</a>
+	<a href="examples/rsa_2048_csr.der">DER</a>
    </td>
    <td>
-    <a href="example/rsa_2048_cert.pem">PEM</a>
+    <a href="examples/rsa_2048_cert.pem">PEM</a>
 	<br>
-	<a href="example/rsa_2048_cert.der">DER</a>
+	<a href="examples/rsa_2048_cert.der">DER</a>
    </td>
   </tr>
   <tr>
@@ -232,19 +232,19 @@ pwnedkeys API, and should return a JWS that you can verify.
 	<tt>316194405bf1c56c3395c4b6fcf32af83ca0e273fbf0832ef8364069a178ad75</tt>
 	</td>
    <td>
-    <a href="example/p256_key.pem">PEM</a>
+    <a href="examples/p256_key.pem">PEM</a>
 	<br>
-	<a href="example/p256_key.der">DER</a>
+	<a href="examples/p256_key.der">DER</a>
    </td>
    <td>
-    <a href="example/p256_csr.pem">PEM</a>
+    <a href="examples/p256_csr.pem">PEM</a>
 	<br>
-	<a href="example/p256_csr.der">DER</a>
+	<a href="examples/p256_csr.der">DER</a>
    </td>
    <td>
-    <a href="example/p256_cert.pem">PEM</a>
+    <a href="examples/p256_cert.pem">PEM</a>
 	<br>
-	<a href="example/p256_cert.der">DER</a>
+	<a href="examples/p256_cert.der">DER</a>
    </td>
   </tr>
  </tbody>
