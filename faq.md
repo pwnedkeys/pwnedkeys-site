@@ -48,11 +48,12 @@ You've got questions?  This FAQ (might) have answers!
 
 * **What kinds of keys does pwnedkeys store?**
 
-  The pwnedkeys database keeps records of 2048 bit and larger RSA keys, as well
+  The pwnedkeys database keeps records of 1024 bit and larger RSA keys, as well
   as elliptic-curve keys on the P-256, P-384, and P-521 curves.  Support for
-  curve25519 and curve448 keys are planned.
+  curve25519 and curve448 keys are planned.  Other key types may be added, subject
+  to demand and availability of the relevant standards.
 
-  DSA keys, and RSA keys smaller than 2048 bits, are not kept, as these keys are
+  DSA keys, and RSA keys smaller than 1024 bits, are not kept, as these keys are
   generally considered of limited security, and in general should not be used at
   all, whether they are known to be compromised or not.
 
@@ -79,6 +80,12 @@ You've got questions?  This FAQ (might) have answers!
 
   The primary developer and maintainer of pwnedkeys is Matt Palmer, a long-time
   security and crypto(graphy!) afficionado.
+
+* **Can I give you money?**
+
+  Absolutely!  We have a [commercial support](commercial.html) offering available,
+  which gives you access to technical support around the use of the service, as well
+  as additional querying capabilities.
 
 * **I have more questions!**
 
